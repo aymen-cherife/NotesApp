@@ -34,12 +34,17 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
+            this.labelNotes = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.labelContent = new System.Windows.Forms.Label();
+            this.labelCreationDate = new System.Windows.Forms.Label();
+            this.labelModificationDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listBoxNotes
             // 
             this.listBoxNotes.FormattingEnabled = true;
-            this.listBoxNotes.Location = new System.Drawing.Point(12, 12);
+            this.listBoxNotes.Location = new System.Drawing.Point(12, 25);
             this.listBoxNotes.Name = "listBoxNotes";
             this.listBoxNotes.Size = new System.Drawing.Size(200, 400);
             this.listBoxNotes.TabIndex = 0;
@@ -47,17 +52,17 @@
             // 
             // textBoxTitle
             // 
-            this.textBoxTitle.Location = new System.Drawing.Point(230, 12);
+            this.textBoxTitle.Location = new System.Drawing.Point(230, 25);
             this.textBoxTitle.Name = "textBoxTitle";
             this.textBoxTitle.Size = new System.Drawing.Size(200, 20);
             this.textBoxTitle.TabIndex = 1;
             // 
             // textBoxContent
             // 
-            this.textBoxContent.Location = new System.Drawing.Point(230, 50);
+            this.textBoxContent.Location = new System.Drawing.Point(230, 75);
             this.textBoxContent.Multiline = true;
             this.textBoxContent.Name = "textBoxContent";
-            this.textBoxContent.Size = new System.Drawing.Size(200, 200);
+            this.textBoxContent.Size = new System.Drawing.Size(200, 150);
             this.textBoxContent.TabIndex = 2;
             // 
             // buttonAdd
@@ -90,11 +95,61 @@
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
+            // labelNotes
+            // 
+            this.labelNotes.AutoSize = true;
+            this.labelNotes.Location = new System.Drawing.Point(12, 9);
+            this.labelNotes.Name = "labelNotes";
+            this.labelNotes.Size = new System.Drawing.Size(35, 13);
+            this.labelNotes.TabIndex = 6;
+            this.labelNotes.Text = "Notes";
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Location = new System.Drawing.Point(230, 9);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(27, 13);
+            this.labelTitle.TabIndex = 7;
+            this.labelTitle.Text = "Titre";
+            // 
+            // labelContent
+            // 
+            this.labelContent.AutoSize = true;
+            this.labelContent.Location = new System.Drawing.Point(230, 59);
+            this.labelContent.Name = "labelContent";
+            this.labelContent.Size = new System.Drawing.Size(44, 13);
+            this.labelContent.TabIndex = 8;
+            this.labelContent.Text = "Contenu";
+            // 
+            // labelCreationDate
+            // 
+            this.labelCreationDate.AutoSize = true;
+            this.labelCreationDate.Location = new System.Drawing.Point(230, 240);
+            this.labelCreationDate.Name = "labelCreationDate";
+            this.labelCreationDate.Size = new System.Drawing.Size(72, 13);
+            this.labelCreationDate.TabIndex = 9;
+            this.labelCreationDate.Text = "Date de creation";
+            // 
+            // labelModificationDate
+            // 
+            this.labelModificationDate.AutoSize = true;
+            this.labelModificationDate.Location = new System.Drawing.Point(230, 260);
+            this.labelModificationDate.Name = "labelModificationDate";
+            this.labelModificationDate.Size = new System.Drawing.Size(89, 13);
+            this.labelModificationDate.TabIndex = 10;
+            this.labelModificationDate.Text = "Date de modification";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 450);
+            this.Controls.Add(this.labelModificationDate);
+            this.Controls.Add(this.labelCreationDate);
+            this.Controls.Add(this.labelContent);
+            this.Controls.Add(this.labelTitle);
+            this.Controls.Add(this.labelNotes);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonAdd);
@@ -115,5 +170,10 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Label labelNotes;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Label labelContent;
+        private System.Windows.Forms.Label labelCreationDate;
+        private System.Windows.Forms.Label labelModificationDate;
     }
 }

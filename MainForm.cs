@@ -31,6 +31,8 @@ namespace NotesApp.Forms
                 Note selectedNote = (Note)listBoxNotes.SelectedItem;
                 textBoxTitle.Text = selectedNote.Title;
                 textBoxContent.Text = selectedNote.Content;
+                labelCreationDate.Text = $"Date de creation: {selectedNote.CreationDate}";
+                labelModificationDate.Text = $"Date de modification: {(selectedNote.ModificationDate.HasValue ? selectedNote.ModificationDate.Value.ToString() : "N/A")}";
             }
         }
 

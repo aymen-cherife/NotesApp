@@ -132,3 +132,4 @@ C:\NotesApp\obj\Debug\net8.0-windows\refint\NotesApp.dll
 C:\NotesApp\obj\Debug\net8.0-windows\NotesApp.pdb
 C:\NotesApp\obj\Debug\net8.0-windows\NotesApp.genruntimeconfig.cache
 C:\NotesApp\obj\Debug\net8.0-windows\ref\NotesApp.dll
+C:\NotesApp\obj\Debug\net8.0-windows\NotesApp.sourcelink.json
